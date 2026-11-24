@@ -1,0 +1,51 @@
+{
+  "name": "startif",
+  "version": "1.0.0",
+  "description": "Plataforma de estágios do IFSul Campus Bagé",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "criar-admin": "node scripts/criar-admin.js",
+    "migrar": "node scripts/migrar-dados.js",
+    "migrar:simular": "node scripts/migrar-dados.js --simular",
+    "atualizar-prazos": "node scripts/atualizar-prazos.js",
+    "test": "node scripts/testar.js",
+    "migrar:bage": "node scripts/migrar-bage.js",
+    "migrar:bage:simular": "node scripts/migrar-bage.js --simular",
+    "notificacoes:processar": "node scripts/processar-notificacoes.js",
+    "test:visual": "node scripts/verificar-visual.js",
+    "test:paginas": "node scripts/verificar-paginas.js",
+    "migrar:arquivos": "node scripts/migrar-arquivos.js",
+    "migrar:arquivos:simular": "node scripts/migrar-arquivos.js --simular",
+    "inicializar:instituicao": "node scripts/inicializar-instituicao.js",
+    "migrar:canais": "node scripts/migrar-canais.js",
+    "migrar:canais:simular": "node scripts/migrar-canais.js --simular",
+    "verificar:banco": "node scripts/verificar-banco.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "dotenv": "^17.4.2",
+    "ejs": "^3.1.10",
+    "express": "^4.22.2",
+    "express-session": "^1.18.2",
+    "google-auth-library": "^11.3.4",
+    "mongodb": "^7.6.0",
+    "mongoose": "^8.24.4",
+    "multer": "^2.2.0",
+    "nodemailer": "^10.0.10",
+    "pdfkit": "^0.20.2"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "mongodb-memory-server": "^11.3.0",
+    "playwright": "^1.63.0"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "allowScripts": {
+    "mongodb-memory-server@11.3.0": true
+  }
+}
